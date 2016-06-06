@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+	<p>Click me!</p>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("p").click(function() {
+				var text = $(this).html();
+				//console.log(text)
+				var newtext ="<p> This is a click event </p>" ;
+				$(this).append(newtext)
+			})
+			$("p").dblclick(function() {
+				var text = $(this).html();
+				//console.log(text)
+				var newtext ="<p> This is a double-click event </p>" ;
+				$(this).append(newtext)
+			})
+		})
+	</script>
+	</body>
+</html>
